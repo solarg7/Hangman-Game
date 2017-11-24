@@ -6,8 +6,13 @@ window.onload = function() {
   var wordH4 = ["E", "V", "E", "R", "T", "O", "N"];
   var wordH5 = ["C", "H", "E", "E", "L", "S", "E"];
   var wordH6 = ["T", "O", "T", "T", "E", "N", "H", "A", "M"];
+  var wordH7 = ["A", "M", "P", "A", "R", "I", "T", "O"];
+  var wordH8 = ["N", "I", "K", "A", "N", "O", "R"];
+  var wordH9 = ["A", "N", "D", "A"];
+  var wordH10 = ["T", "O", "D", "O", "E", "L", "C", "H", "O", "R", "O"];
+  var wordH11 = ["E", "M", "P", "A", "N", "A", "D", "A", "S"];    
   var wordC = "";
-  var wordM = wordH1; //PALABRA BUSCADA
+  var wordM = wordH11; //PALABRA BUSCADA
   var wordCo = [];
   letterFault = 0
    
@@ -18,6 +23,7 @@ window.onload = function() {
 
   var targetA = document.getElementById("wShow");
   var faultCntr = document.getElementById("faultCnt");
+  var letterShow = document.getElementById("letterAlGues");  
 
   var wordTraf = wordCo [0]
   for (var i = 1; i < wordM.length; i++) {
@@ -32,16 +38,27 @@ window.onload = function() {
 
 
     function checkKey(){
+      var wordSuc = 0
       var letterInput = event.key;
       for (var i = 0; i < wordM.length; i++) {
-          if(wordM [i] != letterInput && i+1 == wordM.length){
+          if(wordM [i] == letterInput){
+              wordCo [i] = letterInput;
+              wordSuc = wordSuc + 1
+          } 
+
+          if (wordM [i] != letterInput && wordSuc == 0 && i + 1 == wordM.length){
             letterFault = letterFault + 1;
             //var newA = document.createElement("a");
             faultCntr.innerHTML = letterFault;
-            //faultCntr.appendChild(newA); 
-          } else if(wordM [i] == letterInput){
-              wordCo [i] = letterInput;
-          }
+            //faultCntr.appendChild(newA);
+
+            var newA = document.createElement("a");
+            newA.innerHTML = letterInput + " ";
+            letterShow.appendChild(newA);
+
+
+
+          } 
 
       }
         var wordTraf = wordCo [0]
@@ -50,6 +67,11 @@ window.onload = function() {
             var wordTraf = wordTraf + " " + wordCo [i];
         }
         targetA.innerHTML = wordTraf;
+
+
+
+
+
     }
     document.onkeyup = checkKey;  
 }
