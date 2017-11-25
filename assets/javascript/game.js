@@ -103,13 +103,19 @@ window.onload = function() {
         letterFault = 0
         letterFault = 10 - letterFault
         faultCntr.innerHTML = letterFault;
-        wins = wins + 1
-        winsHt.innerHTML = wins;
+        if( wordComp == 0) {
+          wins = wins + 1
+          winsHt.innerHTML = wins;
+        }        
+        
         wordNext = wordNext + 1
         wordM = wordH [wordNext]
         for (var i = 0; i < wordM.length; i++) {
           wordCo [i] = "_   "
         }
+        letterF = []
+        letterF [0]= "hola";
+        letterShow.innerHTML = "";
 
 
       }
