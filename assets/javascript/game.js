@@ -14,7 +14,8 @@ window.onload = function() {
   var wordC = "";
   var wordM = wordH11; //PALABRA BUSCADA
   var wordCo = [];
-  var letterFault = 0
+  var letterFault = 10
+  var wins = 0
    
   //Define hidden word letter space to find/ wordCo = PALABRA MOSTRADA
   for (var i = 0; i < wordM.length; i++) {
@@ -23,7 +24,8 @@ window.onload = function() {
 
   var targetA = document.getElementById("wShow");
   var faultCntr = document.getElementById("faultCnt");
-  var letterShow = document.getElementById("letterAlGues");  
+  var letterShow = document.getElementById("letterAlGues");
+  var winsHt = document.getElementById("wins");   
 
   var wordTraf = wordCo [0]
   for (var i = 1; i < wordM.length; i++) {
@@ -64,8 +66,9 @@ window.onload = function() {
           } 
          
           if (wordM [i] != letterInput && wordSuc == 0 && i + 1 == wordM.length && flag1 == 0 && flag1 == 0 ){
-              letterFault = letterFault + 1;
+              letterFault = letterFault - 1;
               //var newA = document.createElement("a");
+              letterFault = letterFault
               faultCntr.innerHTML = letterFault;
               //faultCntr.appendChild(newA);
 
@@ -85,7 +88,10 @@ window.onload = function() {
       }
       if ( wordComp == 0){
         letterFault = 0
+        letterFault = 10 - letterFault
         faultCntr.innerHTML = letterFault;
+        wins = wins + 1
+        winsHt.innerHTML = wins;
       }
       
               
