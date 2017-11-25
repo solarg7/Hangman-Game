@@ -14,7 +14,7 @@ window.onload = function() {
   var wordC = "";
   var wordM = wordH11; //PALABRA BUSCADA
   var wordCo = [];
-  letterFault = 0
+  var letterFault = 0
    
   //Define hidden word letter space to find/ wordCo = PALABRA MOSTRADA
   for (var i = 0; i < wordM.length; i++) {
@@ -36,31 +36,52 @@ window.onload = function() {
   faultCntr.innerHTML = letterFault;
   //faultCntr.appendChild(newA);
 
+  var letterF = []
+
 
     function checkKey(){
       var wordSuc = 0
       var letterInput = event.key;
+      var flag1 = 0
+      var k = 0
+      
+
+      letterF [k]= "hola"
+
+      
+
+
       for (var i = 0; i < wordM.length; i++) {
           if(wordM [i] == letterInput){
               wordCo [i] = letterInput;
               wordSuc = wordSuc + 1
           } 
 
-          if (wordM [i] != letterInput && wordSuc == 0 && i + 1 == wordM.length){
-            letterFault = letterFault + 1;
-            //var newA = document.createElement("a");
-            faultCntr.innerHTML = letterFault;
-            //faultCntr.appendChild(newA);
-
-            var newA = document.createElement("a");
-            newA.innerHTML = letterInput + " ";
-            letterShow.appendChild(newA);
-
-
-
+          if (wordM [i] != letterInput && wordSuc == 0 && i + 1 == wordM.length && flag1 == 0 ){
+             
+            for (var k = 0; k < letterF.length; k++) {
+              if (letterF [k] == letterInput){
+                  flag1 = flag1 + 1
+            }
           } 
+         
+          if (wordM [i] != letterInput && wordSuc == 0 && i + 1 == wordM.length && flag1 == 0 && flag1 == 0 ){
+              letterFault = letterFault + 1;
+              //var newA = document.createElement("a");
+              faultCntr.innerHTML = letterFault;
+              //faultCntr.appendChild(newA);
 
+              var newA = document.createElement("a");
+              newA.innerHTML = letterInput + " ";
+              letterShow.appendChild(newA);
+              k = k + 1
+              letterF [k]= letterInput
+            }
+          } 
       }
+
+
+
         var wordTraf = wordCo [0]
         for (var i = 1; i < wordM.length; i++) {
             //var newA = document.createElement("a");
