@@ -37,19 +37,17 @@ window.onload = function() {
   //faultCntr.appendChild(newA);
 
   var letterF = []
-
+  //var wordNumber = 0
+  
 
     function checkKey(){
+      var wordComp = 0
       var wordSuc = 0
       var letterInput = event.key;
       var flag1 = 0
       var k = 0
-      
-
+     
       letterF [k]= "hola"
-
-      
-
 
       for (var i = 0; i < wordM.length; i++) {
           if(wordM [i] == letterInput){
@@ -80,20 +78,28 @@ window.onload = function() {
           } 
       }
 
-
-
-        var wordTraf = wordCo [0]
-        for (var i = 1; i < wordM.length; i++) {
-            //var newA = document.createElement("a");
-            var wordTraf = wordTraf + " " + wordCo [i];
+      for (var q = 0; q < wordCo.length; q++) {
+        if (wordCo [q] == "_   "){
+            wordComp = wordComp + 1
         }
-        targetA.innerHTML = wordTraf;
+      }
+      if ( wordComp == 0){
+        letterFault = 0
+        faultCntr.innerHTML = letterFault;
+      }
+      
+              
 
 
 
-
-
+      var wordTraf = wordCo [0]
+      for (var i = 1; i < wordM.length; i++) {
+        //var newA = document.createElement("a");
+        var wordTraf = wordTraf + " " + wordCo [i];
+      }
+      targetA.innerHTML = wordTraf;
     }
+    
     document.onkeyup = checkKey;  
 }
     
