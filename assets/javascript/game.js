@@ -107,7 +107,10 @@ window.onload = function() {
           wins = wins + 1
           winsHt.innerHTML = wins;
         }        
-        
+        for( var f=1; f< wordCo.length; f++){ 
+          delete wordCo [f];
+        }
+
         wordNext = wordNext + 1
         wordM = wordH [wordNext]
         for (var i = 0; i < wordM.length; i++) {
