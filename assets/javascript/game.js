@@ -56,9 +56,11 @@ window.onload = function() {
     
     function checkKey(){
 
+      var lettertrasp = event.key.toUpperCase();
+
       var wordComp = 0
       var wordSuc = 0
-      var letterInput = event.key;
+      var letterInput = lettertrasp;
       var flag1 = 0
       var k = 0
      
