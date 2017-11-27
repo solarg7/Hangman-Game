@@ -2,18 +2,31 @@ window.onload = function() {
   
        
         var wordH= []
-        wordH [1] = ["A", "R", "S", "E", "N", "A", "L"];
-        wordH [2] = ["M", "A", "N", "C", "H", "E", "S", "T", "E", "R"];
-        wordH [3] = ["L", "I", "V", "E", "R", "P", "O", "O", "L"];
-        wordH [4] = ["E", "V", "E", "R", "T", "O", "N"];
-        wordH [5] = ["C", "H", "E", "E", "L", "S", "E"];
-        wordH [6] = ["T", "O", "T", "T", "E", "N", "H", "A", "M"];
-        wordH [7] = ["A", "M", "P", "A", "R", "I", "T", "O"];
-        wordH [8] = ["N", "I", "K", "A", "N", "O", "R"];
-        wordH [9] = ["A", "N", "D", "A"];
-        wordH [10] = ["T", "O", "D", "O", "E", "L", "C", "H", "O", "R", "O"];
-        wordH [11] = ["E", "M", "P", "A", "N", "A", "D", "A", "S"];    
-        
+        wordH [1] = ["H", "Y", "D", "R", "U", "S"];
+        wordH [2] = ["V", "I", "R", "G", "O"];
+        wordH [3] = ["C", "A", "P", "R", "I", "C", "O", "R", "N", "U", "S"];
+        wordH [4] = ["P", "E", "G", "A", "S", "U", "S"];
+        wordH [5] = ["A", "C", "U", "A", "R", "I", "U", "S"];
+        wordH [6] = ["A", "D", "R", "O", "M", "E", "D", "A"];
+        wordH [7] = ["C", "E", "N", "T", "A", "U", "R", "U", "S"];
+        wordH [8] = ["H", "O", "R", "O", "L", "O", "G", "I", "U", "M"];
+        wordH [9] = ["H", "Y", "D", "R", "A"];
+        wordH [10] = ["S", "A", "G", "I", "T", "A", "R", "I", "U", "S"];
+        wordH [11] = ["T", "A", "U", "R", "U", "S"];
+
+        var constel = []
+        constel [0] = "assets/images/Constellation_Hydrus.JPG"
+        constel [1] = "assets/images/VirgoCC.JPG"    
+        constel [2] = "assets/images/384px-CapricornusCC.JPG"
+        constel [3] = "assets/images/450px-PegasusCC.JPG"
+        constel [4] = "assets/images/AquariusCC.JPG"
+        constel [5] = "assets/images/AndromedaCC.JPG"
+        constel [6] = "assets/images/Constellation_Centaurus.JPG"
+        constel [7] = "assets/images/Constellation_Horologium.JPG"        
+        constel [8] = "assets/images/HydraCC.JPG"
+        constel [9] = "assets/images/SagittariusCC.JPG"
+        constel [10] = "assets/images/TaurusCC.JPG"
+
         var wordC = "";
         var wordNext = 1
 
@@ -121,6 +134,8 @@ window.onload = function() {
         letterF = []
         letterF [0]= "hola";
         letterShow.innerHTML = "";
+
+        document.getElementById("foto1").src = constel [wordNext-2];
 
 
       }
