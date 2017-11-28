@@ -19,8 +19,8 @@ body {
 .format2{
 	background-color: orange;  
 	font-family: 'Orbitron', sans-serif;
-	font-size: 18px;
-	line-height: 34px;
+	font-size: 16px;
+	line-height: 28px;
 	text-align: center;
 }
 
@@ -50,7 +50,7 @@ body {
 	text-align: center;
 	color: red;
 	font-weight: bold;
-	margin-top: 40px;
+	margin-top: 20px;
 
 }
 
