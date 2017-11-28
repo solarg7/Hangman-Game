@@ -24,6 +24,13 @@ body {
 	text-align: center;
 }
 
+.format5{
+	background-color: orange;  
+	font-family: 'Orbitron', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+}
 .format3{
 	background-color: #5499C7;  
 	font-family: 'Orbitron', sans-serif;
@@ -33,12 +40,34 @@ body {
 	color: white;
 }
 
+.format6{
+	background-color: #5499C7;  
+	font-family: 'Orbitron', sans-serif;
+	font-size: 60px;
+	line-height: 70px;
+	text-align: center;
+	color: white;
+	height: 120px;
+	border:  3px solid #ddd;
+	max-width: 960px;
+}
+
+.format7{
+	background-color: #5499C7;  
+	font-family: 'Orbitron', sans-serif;
+	font-size: 60px;
+	line-height: 70px;
+	text-align: center;
+	color: white;
+	height: 80px;
+	border:  3px solid #ddd;
+}
 
 .cont{
   width: 100%;
   max-width: 960px;
   min-width: 100px;
-  margin: 0 auto;
+  margin: auto auto;
   clear: both;
   background-color: #5499C7; 
 }
@@ -59,7 +88,15 @@ body {
   height: 200px;
   margin-left: auto;
   margin-right: auto;
+  align-content: center;
+  border:  3px solid #ddd;
 
 }
 
-
+.format8{
+	background-color: #5499C7;  
+	
+	height: 230px;
+	border:  3px solid #ddd;
+	max-width: 960px;
+}
