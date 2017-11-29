@@ -16,13 +16,7 @@ body {
 	text-align: center;
 }
 
-.format2{
-	background-color: orange;  
-	font-family: 'Orbitron', sans-serif;
-	font-size: 16px;
-	line-height: 28px;
-	text-align: center;
-}
+
 
 .format5{
 	background-color: orange;  
@@ -48,8 +42,8 @@ body {
 	text-align: center;
 	color: white;
 	height: 120px;
-	border:  3px solid #ddd;
-	max-width: 960px;
+	margin-top: 20px;
+
 }
 
 .format7{
@@ -60,7 +54,8 @@ body {
 	text-align: center;
 	color: white;
 	height: 80px;
-	border:  3px solid #ddd;
+	
+	margin-top: -20px;
 }
 
 .cont{
@@ -89,14 +84,31 @@ body {
   margin-left: auto;
   margin-right: auto;
   align-content: center;
-  border:  3px solid #ddd;
+  
+  padding-top: 17px;
 
 }
 
 .format8{
 	background-color: #5499C7;  
-	
-	height: 230px;
-	border:  3px solid #ddd;
-	max-width: 960px;
+	  
+	font-family: 'Orbitron', sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+	height: 240px;
 }
+
+.format2{
+	background-color: orange;  
+	font-family: 'Orbitron', sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.format10{
+	margin-top: 10px;
+}
+
+
