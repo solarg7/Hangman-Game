@@ -15,17 +15,18 @@ window.onload = function() {
         wordH [11] = ["T", "A", "U", "R", "U", "S"];
 
         var constel = []
-        constel [0] = "assets/images/Constellation_Hydrus.JPG"
-        constel [1] = "assets/images/VirgoCC.JPG"    
-        constel [2] = "assets/images/384px-CapricornusCC.JPG"
-        constel [3] = "assets/images/450px-PegasusCC.JPG"
-        constel [4] = "assets/images/AquariusCC.JPG"
-        constel [5] = "assets/images/AndromedaCC.JPG"
-        constel [6] = "assets/images/Constellation_Centaurus.JPG"
-        constel [7] = "assets/images/Constellation_Horologium.JPG"        
-        constel [8] = "assets/images/HydraCC.JPG"
-        constel [9] = "assets/images/SagittariusCC.JPG"
-        constel [10] = "assets/images/TaurusCC.JPG"
+        constel [1] = "assets/images/Constellation_Hydrus.JPG"
+        constel [2] = "assets/images/VirgoCC.JPG"    
+        constel [3] = "assets/images/384px-CapricornusCC.JPG"
+        constel [4] = "assets/images/450px-PegasusCC.JPG"
+        constel [5] = "assets/images/AquariusCC.JPG"
+        constel [6] = "assets/images/AndromedaCC.JPG"
+        constel [7] = "assets/images/Constellation_Centaurus.JPG"
+        constel [8] = "assets/images/Constellation_Horologium.JPG"        
+        constel [9] = "assets/images/HydraCC.JPG"
+        constel [10] = "assets/images/SagittariusCC.JPG"
+        constel [11] = "assets/images/TaurusCC.JPG"
+        constel [12] = "assets/images/TaurusCC.JPG"        
 
         var wordC = "";
         var wordNext = 1
@@ -65,7 +66,7 @@ window.onload = function() {
         function initial(){ }   
 
     
-    initial();
+      initial();
     
     function checkKey(){
 
@@ -78,6 +79,10 @@ window.onload = function() {
       var k = 0
      
       letterF [k]= "hola";
+
+      if(wordNext == 11){
+        wordNext = 0
+      }
 
       for (var i = 0; i < wordM.length; i++) {
           if(wordM [i] == letterInput){
@@ -135,7 +140,16 @@ window.onload = function() {
         letterF [0]= "hola";
         letterShow.innerHTML = "";
 
-        document.getElementById("foto1").src = constel [wordNext-2];
+        
+        if(wordNext == 1) {
+          var foto = 11;
+        }
+        if(wordNext != 1){
+          var foto = wordNext-1;
+        }
+        
+
+        document.getElementById("foto1").src = constel [foto];
 
 
       }
