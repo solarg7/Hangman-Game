@@ -15,7 +15,7 @@ window.onload = function() {
         wordH [11] = ["T", "A", "U", "R", "U", "S"];
 
         var constel = []
-        constel [1] = "assets/images/Constellation_Hydrus.jpg"
+        constel [1] = "./assets/images/Constellation_Hydrus.jpg"
         constel [2] = "./assets/images/VirgoCC.jpg"    
         constel [3] = "./assets/images/384px-CapricornusCC.jpg"
         constel [4] = "./assets/images/450px-PegasusCC.jpg"
@@ -140,12 +140,12 @@ window.onload = function() {
         letterF [0]= "hola";
         letterShow.innerHTML = "";
 
-        
+         var foto;
         if(wordNext == 1) {
-          var foto = 11;
+          foto = 11;
         }
         if(wordNext != 1){
-          var foto = wordNext-1;
+          foto = wordNext-1;
         }
         
 
