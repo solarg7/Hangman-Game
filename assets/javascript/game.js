@@ -6,12 +6,12 @@ window.onload = function() {
         wordH [2] = ["V", "I", "R", "G", "O"];
         wordH [3] = ["C", "A", "P", "R", "I", "C", "O", "R", "N", "U", "S"];
         wordH [4] = ["P", "E", "G", "A", "S", "U", "S"];
-        wordH [5] = ["A", "C", "U", "A", "R", "I", "U", "S"];
+        wordH [5] = ["A", "Q", "U", "A", "R", "I", "U", "S"];
         wordH [6] = ["A", "D", "R", "O", "M", "E", "D", "A"];
         wordH [7] = ["C", "E", "N", "T", "A", "U", "R", "U", "S"];
         wordH [8] = ["H", "O", "R", "O", "L", "O", "G", "I", "U", "M"];
         wordH [9] = ["H", "Y", "D", "R", "A"];
-        wordH [10] = ["S", "A", "G", "I", "T", "A", "R", "I", "U", "S"];
+        wordH [10] = ["S", "A", "G", "I", "T", "T", "A", "R", "I", "U", "S"];
         wordH [11] = ["T", "A", "U", "R", "U", "S"];
 
         var constel = []
