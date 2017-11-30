@@ -15,7 +15,7 @@ window.onload = function() {
         wordH [11] = ["T", "A", "U", "R", "U", "S"];
 
         var constel = []
-        constel [1] = "assets/images/Constellation_Hydrus.png"
+        constel [1] = "assets/images/Constellation_Hydrus.PNG"
         constel [2] = "assets/images/VirgoCC.JPGs"    
         constel [3] = "assets/images/384px-CapricornusCC.JPGs"
         constel [4] = "assets/images/450px-PegasusCC.JPGs"
