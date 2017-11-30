@@ -1,6 +1,6 @@
 window.onload = function() {    
   
-       
+             
         var wordH= []
         wordH [1] = ["H", "Y", "D", "R", "U", "S"];
         wordH [2] = ["V", "I", "R", "G", "O"];
