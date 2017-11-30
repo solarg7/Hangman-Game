@@ -15,10 +15,10 @@ window.onload = function() {
         wordH [11] = ["T", "A", "U", "R", "U", "S"];
 
         var constel = []
-        constel [1] = "assets/images/Constellation_Hydrus.jpg"
-        constel [2] = "assets/images/VirgoCC.jpg"    
-        constel [3] = "assets/images/384px-CapricornusCC.jpg"
-        constel [4] = "assets/images/450px-PegasusCC.JPG"
+        constel [1] = "./assets/images/Constellation_Hydrus.jpg"
+        constel [2] = "./assets/images/VirgoCC.jpg"    
+        constel [3] = "./assets/images/384px-CapricornusCC.jpg"
+        constel [4] = "./assets/images/450px-PegasusCC.JPG"
         constel [5] = "assets/images/AquariusCC.JPG"
         constel [6] = "assets/images/AndromedaCC.JPG"
         constel [7] = "assets/images/Constellation_Centaurus.JPG"
